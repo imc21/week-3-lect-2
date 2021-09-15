@@ -4,15 +4,21 @@
 
 public class NewClass {
     
-    int getSum(int a, int b){
-        return a+b;
-    }
+    //Lab 3 task: create a method that takes a string and return how many
+    //characters there are.
+    //call this method and pass your name as an argument
+     int getStrLength(String x){
+         String str = x;
+         int y = str.length();
+         return y;
+     }
     
     public static void main(String[] args){
         NewClass nc = new NewClass();
-        int x=10, y = 100;
-        int z = nc.getSum(x,y);
-        System.out.println("The sum is " + z);
+        String x = "Caleb Im";
+       int len = nc.getStrLength(x);
+       System.out.println("The length is " + len);
+       
     }
     
 }
